@@ -12,15 +12,14 @@ def index():
     movies = MOVIES
     # grab form values
     min_rating = request.form.get('min_rating', type=float)
-    genre      = request.form.get('genre', default='').lower()
-
+    selected_genres      = [g.lower() for g in request.form.getlist('genres')]
     if request.method == 'POST':
         if min_rating is not None:
             movies = [m for m in movies if m['rating'] >= min_rating]
-        if genre:
+        if selected_genres:
             movies = [
               m for m in movies
-              if genre in (g.lower() for g in m['genres'])
+              if all(genre in (g.lower() for g in m['genres']) for genre in selected_genres)
             ]
 
     # gather all unique genres for the dropdown
