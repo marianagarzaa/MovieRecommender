@@ -1,8 +1,8 @@
-What we should eventually update in our readme: In addition, please submit a 1 page readme.txt file – this should contain the name and description of
-your project (4-5 sentences), describe which of the categories you used from the above, and the actual
-work breakdown (who did what
-
 Project Name: Movie Reccomender 
-Project Description: Awesome movie reccomender that is super useful and will recomend you the best movie ever based on some filters
-Work Breakdown: TBD 
 
+Project Description: This movie reccomender takes information scraped from IMBDV (information retreival!) and then provides a way for the udser to find movie reccomendations 
+based on filters of their choice. They can select a min rating and up to as many genres as they want to find good movies with that rating and of those genres (reccomendations!).
+The way to use our app is to insert your min rating requirement, select the genres you want, and then click apply and wait for movies to appear as reccomendations! Behind the 
+scenes, it works by scraping info on genre and rating from the top 250 IMBDV movies and then tagging their genre and rating and then filtering based on a user query. 
+
+Work Breakdown: Together, we came up with the idea for our project and drew up a timeline and plan to follow to get the project in on time. Then Jai took the lead on the scraping portion and started the filtering functionality. Mariana added a few more filtering functions and then finalized our project with some CSS to make it more user friendly. Finally (with Jai's help) she deployed the site!
